@@ -10,6 +10,7 @@ import Signup from '../pages/Signup';
 
 const Routers = () => {
   return <Routes>
+    <Route path='/agroamigo-ecommerce' element={<Navigate to='/home'/>}/>
     <Route path='/' element={<Navigate to='/home'/>}/>
     <Route path='home' element={<Home/>}/>
     <Route path='shop' element={<Shop/>}/>
