@@ -9,7 +9,7 @@
   --card-bg-04: #e2f2b2;
   /* --primary-color: #0a1d37; */
   /* --primary-color:#2ca028; */
-  /* --primary-color:#4c9c44; */
+  --secondary-color:orangered;
   --primary-color:#3f7228;
   --hero-bg: #d6e5fb;
   --heading-fontSize: 2rem;
@@ -68,4 +68,10 @@ section{
 .section__title{
   color: var(--primary-color);
   font-weight: 600;
+}
+
+@media only screen and (max-width: 768px){
+  section{
+    padding: 40px 0px;
+  }
 }
