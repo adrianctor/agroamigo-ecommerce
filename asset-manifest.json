@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/agroamigo-ecommerce/static/css/main.a67bc5ac.css",
-    "main.js": "/agroamigo-ecommerce/static/js/main.4fcf6c76.js",
+    "main.css": "/agroamigo-ecommerce/static/css/main.3ac23db7.css",
+    "main.js": "/agroamigo-ecommerce/static/js/main.1127d6bc.js",
     "static/media/single-sofa-01.jpg": "/agroamigo-ecommerce/static/media/single-sofa-01.db24b9feed7582c4e98d.jpg",
     "static/media/arm-chair-03.jpg": "/agroamigo-ecommerce/static/media/arm-chair-03.3249f382638c86196acd.jpg",
     "static/media/single-sofa-03.jpg": "/agroamigo-ecommerce/static/media/single-sofa-03.0d976c067034347df78d.jpg",
@@ -33,11 +33,11 @@
     "static/media/wireless-03.png": "/agroamigo-ecommerce/static/media/wireless-03.102199ac2c306820fe70.png",
     "static/media/wireless-01.png": "/agroamigo-ecommerce/static/media/wireless-01.1a76d777727c50ca0294.png",
     "index.html": "/agroamigo-ecommerce/index.html",
-    "main.a67bc5ac.css.map": "/agroamigo-ecommerce/static/css/main.a67bc5ac.css.map",
-    "main.4fcf6c76.js.map": "/agroamigo-ecommerce/static/js/main.4fcf6c76.js.map"
+    "main.3ac23db7.css.map": "/agroamigo-ecommerce/static/css/main.3ac23db7.css.map",
+    "main.1127d6bc.js.map": "/agroamigo-ecommerce/static/js/main.1127d6bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.a67bc5ac.css",
-    "static/js/main.4fcf6c76.js"
+    "static/css/main.3ac23db7.css",
+    "static/js/main.1127d6bc.js"
   ]
 }
