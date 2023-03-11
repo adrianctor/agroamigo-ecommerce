@@ -22,6 +22,10 @@ const nav__links = [
   {
     path:'cart',
     display:'Carrito'
+  },
+  {
+    path:'about',
+    display:'Acerca'
   }
 ]
 
