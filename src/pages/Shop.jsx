@@ -59,19 +59,19 @@ const Shop = () => {
               </div>
             </Col>
             <Col lg="3" md="6" className='text-end'>
-            <div className="filter__widget">
+            {/* <div className="filter__widget">
                 <select>
                   <option>Ordenar por</option>
                   <option value="ascending">Ascendente</option>
                   <option value="descending">Descendente</option>
                 </select>
-              </div>
+              </div> */}
             </Col>
             <Col lg="6" md="12">
               <div className="search__box">
                 <input type="text" placeholder='Buscar...' onChange={handleSearch}/>
                 <span>
-                  <i class="ri-search-line"></i>
+                  <i className="ri-search-line"></i>
                 </span>
               </div>
             </Col>

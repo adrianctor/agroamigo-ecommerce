@@ -61,19 +61,19 @@ const ProductDetails = () => {
                 <div className="product__rating d-flex align-items-center gap-5 mb-3">
                   <div>
                     <span >
-                      <i class="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
                     </span>
                     <span >
-                      <i class="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
                     </span>
                     <span >
-                      <i class="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
                     </span>
                     <span >
-                      <i class="ri-star-s-fill"></i>
+                      <i className="ri-star-s-fill"></i>
                     </span>
                     <span >
-                    <i class="ri-star-half-fill"></i>
+                    <i className="ri-star-half-fill"></i>
                     </span>
                   </div>
                   <p>(<span>{avgRating}</span> ratings)</p>
@@ -126,11 +126,11 @@ const ProductDetails = () => {
                           <input type="text" placeholder='Ingrese el nombre'  ref={reviewUser} required/>
                         </div>
                         <div className="form__group d-flex align-items-center gap-4 rating__group">
-                          <motion.span whileTap={{scale:1.2}} onClick={()=>setRating(1)}>1<i class='ri-star-s-fill'></i></motion.span>
-                          <motion.span whileTap={{scale:1.2}} onClick={()=>setRating(2)}>2<i class='ri-star-s-fill'></i></motion.span >
-                          <motion.span whileTap={{scale:1.2}} onClick={()=>setRating(3)}>3<i class='ri-star-s-fill'></i></motion.span>
-                          <motion.span whileTap={{scale:1.2}} onClick={()=>setRating(4)}>4<i class='ri-star-s-fill'></i></motion.span>
-                          <motion.span whileTap={{scale:1.2}} onClick={()=>setRating(5)}>5<i class='ri-star-s-fill'></i></motion.span>
+                          <motion.span whileTap={{scale:1.2}} onClick={()=>setRating(1)}>1<i className='ri-star-s-fill'></i></motion.span>
+                          <motion.span whileTap={{scale:1.2}} onClick={()=>setRating(2)}>2<i className='ri-star-s-fill'></i></motion.span >
+                          <motion.span whileTap={{scale:1.2}} onClick={()=>setRating(3)}>3<i className='ri-star-s-fill'></i></motion.span>
+                          <motion.span whileTap={{scale:1.2}} onClick={()=>setRating(4)}>4<i className='ri-star-s-fill'></i></motion.span>
+                          <motion.span whileTap={{scale:1.2}} onClick={()=>setRating(5)}>5<i className='ri-star-s-fill'></i></motion.span>
                         </div>
                         <div className="form__group">
                           <textarea rows={4} type="text" placeholder='Escribe tu reseña...' ref={reviewMsg} required/>
