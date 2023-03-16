@@ -36,6 +36,14 @@
     color: var(--primary-color);
     font-weight: 500;
     cursor: pointer;
+    padding: 10px;
+    transition: 700ms;
+}
+.nav__item a:hover{
+    background: var(--primary-color);
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .nav__icons{
@@ -74,10 +82,46 @@
 }
 
 
-.nav__icons span img{
+.nav__icons .profile img{
     width: 30px;
     height: 30px;
     cursor: pointer;
+    border-radius: 50%;
+}
+.nav__icons .profile{
+    position: relative;
+    z-index:9;
+}
+.nav__icons .profile .profile__actions{
+    position: absolute;
+    top: 98%;
+    right: 0;
+    width: 150px;
+    z-index: 10;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.nav__icons .profile .profile__actions a:hover{
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.profile__username{
+    
+}
+
+.show__profileActions{
+    display: block !important;
 }
 
 .mobile__menu{
@@ -88,6 +132,10 @@
 
 .nav__active{
     font-weight: 700 !important;
+    background: var(--primary-color);
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 10px;
 }
 .sticky__header{
     width: 100%;

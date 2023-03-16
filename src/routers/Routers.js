@@ -9,6 +9,8 @@ import Login from '../pages/Login';
 import Signup from '../pages/Signup';
 import About from '../pages/About';
 import ProtectedRoute from './ProtectedRoute';
+import Contact from '../pages/Contact';
+import Events from '../pages/Events';
 
 const Routers = () => {
   return <Routes>
@@ -17,6 +19,8 @@ const Routers = () => {
     <Route path='home' element={<Home/>}/>
     <Route path='shop' element={<Shop/>}/>
     <Route path='cart' element={<Cart/>}/>
+    <Route path='contact' element={<Contact/>}/>
+    <Route path='events' element={<Events/>}/>
     <Route path='shop/:id' element={<ProductDetails/>}/>
     {/* <Route path='checkout' element={<ProtectedRoute><Checkout/><ProtectedRoute/>}/> */}
     <Route path='login' element={<Login/>}/>

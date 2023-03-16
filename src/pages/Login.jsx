@@ -20,7 +20,7 @@ const Login = () => {
       const user = userCredential.user;
       setLoading(false);
       toast.success('Bienvenido de nuevo a Agroamigo-Administración');
-      navigate('/inicio');
+      navigate('/home');
     } catch (error) {
       setLoading(false);
       toast.error(error.message);
@@ -45,7 +45,7 @@ const Login = () => {
                 </FormGroup>
 
                 <FormGroup className='form__group'>
-                  <input type="email" placeholder='Contraseña' value={password} onChange={e=>setPassword(e.target.value)}/>
+                  <input type="password" placeholder='Contraseña' value={password} onChange={e=>setPassword(e.target.value)}/>
                 </FormGroup>
 
                 <button type='submit' className="buy__btn auth__btn">Ingresar</button>

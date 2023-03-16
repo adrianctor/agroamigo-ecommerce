@@ -10,6 +10,10 @@ import userIcon from '../../assets/images/user-icon.png'
 import { Container,Row } from 'reactstrap';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import useAuth from '../../custom-hooks/useAuth';
+import { signOut } from 'firebase/auth';
+import { auth } from '../../firebase.config';
+import { toast } from 'react-toastify';
 
 const nav__links = [
   {
@@ -17,25 +21,40 @@ const nav__links = [
     display:'Inicio'
   },
   {
+    path:'about',
+    display:'Nosotros'
+  },
+  {
     path:'shop',
     display:'Tienda'
   },
-  {
+  /* {
     path:'cart',
     display:'Carrito'
+  }, */
+  {
+    path:'contact',
+    display:'Contacto'
   },
   {
-    path:'about',
-    display:'Acerca'
-  }
+    path:'events',
+    display:'Eventos'
+  },
+  
 ]
 
 const Header = () => {
 
   const headerRef = useRef(null);
   const totalQuantity = useSelector(state=>state.cart.totalQuantity);
+
+  const profileActionRef = useRef(null);
+
   const menuRef = useRef(null);
   const navigate = useNavigate();
+
+  const {currentUser} = useAuth();
+
   const stickyHeaderFunc = ()=>{
     window.addEventListener('scroll',()=>{
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -45,6 +64,16 @@ const Header = () => {
       }
     });
   }
+
+  const logout = ()=>{
+    signOut(auth).then(()=>{
+      toast.success('Cierre de sesión exitoso. Nos vemos pronto');
+      navigate('/home');
+    }).catch((error)=>{
+      toast.error(error.message)
+    });
+  };
+
   useEffect(()=>{
     stickyHeaderFunc()
     return ()=> window.removeEventListener('scroll',stickyHeaderFunc);
@@ -54,6 +83,11 @@ const Header = () => {
   const navigateToCart = ()=>{
     navigate('/cart');
   };
+
+  const navigateToLogin = ()=>{
+    navigate('/login');
+  };
+  const profileActionsToggle = ()=> profileActionRef.current.classList.toggle('show__profileActions');
 
   return (
   <header className="header" ref={headerRef}>
@@ -89,10 +123,37 @@ const Header = () => {
               <i className="ri-shopping-bag-line"></i>
               <span className="badge">{totalQuantity}</span>
             </span>
-            <span>
-              <Link to='login'><motion.img whileTap={{scale:1.2}} src={userIcon} alt="" /></Link>
-              
-            </span>
+            <div className='profile d-flex align-items-center justify-content-center'>
+              <motion.img className='me-2'
+              whileTap={{scale:1.2}} 
+              src={userIcon} 
+              alt="Icono usuario" 
+              onClick={profileActionsToggle}/>
+              {
+                currentUser?
+                <p className='profile__username'>Esteban</p>:
+                ''
+              }
+              <div 
+              className="profile__actions"
+              ref={profileActionRef}
+              onClick={profileActionsToggle}>
+                {
+                  currentUser?
+                  (<div onClick={logout}>
+                    <span>Salir</span>
+                  </div>):
+                  (<div className='d-flex align-items-center justify-content-center flex-column' >
+                    <div className='w-100' onClick={navigateToLogin}>
+                      Ingresar
+                    </div>
+                      
+                  </div>
+                  
+                  )
+                }
+              </div>
+            </div>
             <div className="mobile__menu">
               <span onClick={menuToggle}>
                 <i className="ri-menu-line"></i>

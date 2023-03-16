@@ -77,17 +77,6 @@ const Home = () => {
       </Container>
     </section>
 
-    <section className="best__sales">
-      <Container>
-      <Row>
-          <Col lg="12" className="text-center">
-            <h2 className="section__title">Más vendidos</h2>
-          </Col>
-          <ProductsList data={bestSalesProducts}/>
-        </Row>
-      </Container>
-    </section>
-
     <section className="timer__count">
       <Container>
         <Row>
@@ -108,7 +97,18 @@ const Home = () => {
       </Container>
     </section>
 
-    <section className="new__arrivals">
+    <section className="best__sales">
+      <Container>
+      <Row>
+          <Col lg="12" className="text-center">
+            <h2 className="section__title">Más vendidos</h2>
+          </Col>
+          <ProductsList data={bestSalesProducts}/>
+        </Row>
+      </Container>
+    </section>
+
+{/*     <section className="new__arrivals">
       <Container>
         <Row>
           <Col lg="12" className="text-center">
@@ -129,7 +129,7 @@ const Home = () => {
           <ProductsList data={popularProducts}/>
         </Row>
       </Container>
-    </section>
+    </section> */}
   </Helmet>
 }
 
