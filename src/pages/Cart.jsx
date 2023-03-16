@@ -14,9 +14,9 @@ const Cart = () => {
   const cartItems = useSelector((state)=>state.cart.cartItems);
   const totalAmount = useSelector((state)=>state.cart.totalAmount);
   const base = 'https://api.whatsapp.com/send?phone=+573043483801&text=Hola,%20estoy%20comprando:';
-  const urlComplete = base + cartItems.map((item)=>(
+ /*  const urlComplete = base + cartItems.map((item)=>(
     urlComplete = urlComplete+item.productName
-  ));
+  )); */
   return (
     <Helmet title='carrito'>
       <CommonSection title="Carrito de compras"/>
