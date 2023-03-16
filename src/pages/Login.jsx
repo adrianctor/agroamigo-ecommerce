@@ -12,7 +12,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const signIn = async ()=>{
+  const signIn = async (e)=>{
     e.preventDefault();
     setLoading(true);
     try {
