@@ -13,7 +13,7 @@
   --secondary-color:orangered;
   /* --primary-color:#3f7228; */
   --primary-color:#5f882a;
-
+  --primary-color-05: rgba(95, 136, 42, 0.5);
   --hero-bg: #d6e5fb;
   --heading-fontSize: 2rem;
   --small-text-color: #999;
