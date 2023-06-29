@@ -12,6 +12,10 @@ import ProtectedRoute from './ProtectedRoute';
 import Contact from '../pages/Contact';
 import Events from '../pages/Events';
 
+import AddProduct from '../admin/AddProduct';
+import AllProducts from '../admin/AllProducts';
+import Dashboard from '../admin/Dashboard';
+
 const Routers = () => {
   return <Routes>
     <Route path='/agroamigo-ecommerce' element={<Navigate to='/home'/>}/>
@@ -22,6 +26,12 @@ const Routers = () => {
     <Route path='contact' element={<Contact/>}/>
     <Route path='events' element={<Events/>}/>
     <Route path='shop/:id' element={<ProductDetails/>}/>
+    <Route path='/*' element={<ProtectedRoute/>}>
+      {/* <Route path='checkout' element={<Checkout/>} /> */}
+      <Route path='dashboard' element={<Dashboard/>}/>
+      <Route path='dashboard/all-products' element={<AllProducts/>}/>
+      <Route path='dashboard/add-product' element={<AddProduct/>}/>
+    </Route>
     {/* <Route path='checkout' element={<ProtectedRoute><Checkout/><ProtectedRoute/>}/> */}
     <Route path='login' element={<Login/>}/>
     <Route path='signup' element={<Signup/>}/>

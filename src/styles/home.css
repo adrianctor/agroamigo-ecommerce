@@ -1,5 +1,10 @@
 .hero__section{
     background: var(--hero-bg);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.hero__section .container-fluid{
+    padding:0;
 }
 .hero__content h2{
     color: var(--primary-color);

@@ -37,13 +37,14 @@
     font-weight: 500;
     cursor: pointer;
     padding: 10px;
-    transition: 700ms;
+    transition: 1000ms;
+    border-radius: 10px;
 }
 .nav__item a:hover{
     background: var(--primary-color);
     color: #fff !important;
     padding: 10px;
-    border-radius: 10px;
+    
 }
 
 .nav__icons{
