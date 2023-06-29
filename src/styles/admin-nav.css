@@ -49,9 +49,6 @@
     font-size: 1.5rem;
     color: whitesmoke;
 }
-
-
-
 .admin__nav-top-right .profile img{
     width: 30px;
     height: 30px;
@@ -88,9 +85,6 @@
 .show__profileActions{
     display: block !important;
 }
-
-
-
 
 .admin__menu {
     width: 100%;

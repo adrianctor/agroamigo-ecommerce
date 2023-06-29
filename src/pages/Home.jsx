@@ -10,7 +10,7 @@ import '../styles/home.css';
 import { Container, Row, Col } from 'reactstrap';
 import heroImg from '../assets/images/hero-img.png';
 
-import Services from '../services/Services';
+import Video from '../components/UI/Video';
 import ProductsList from '../components/UI/ProductsList';
 
 import Clock from '../components/UI/Clock';
@@ -71,7 +71,8 @@ const Home = () => {
       </Container>
     </section>
 
-    <Services />
+    {/* <Services /> */}
+    <Video/>
 
     <section className="trending__products">
       <Container>

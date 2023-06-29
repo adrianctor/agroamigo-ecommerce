@@ -21,7 +21,7 @@ const About = () => {
               <div id='model1'>
                 <div className="members">
                   <div className="member">
-                    <img width={400} height={400} src={Member1} />
+                    <img width={300} height={300} src={Member1} />
                     <div className="description">
                       <h1>Esteban Gutierrez</h1>
                       <h2>Administrador</h2>
@@ -36,10 +36,10 @@ const About = () => {
                     </div>
                   </div>
                   <div className="member">
-                    <img width={400} src={Member2} />
+                    <img width={300} height={300} src={Member2} />
                     <div className="description">
-                      <h1>Omar Nadir</h1>
-                      <h2>CEO</h2>
+                      <h1>Adrián Torres</h1>
+                      <h2>Desarrollador</h2>
                       <p>
                         Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet consectet.
                       </p>
@@ -51,7 +51,7 @@ const About = () => {
                     </div>
                   </div>
                   <div className="member">
-                    <img width={400} src={Member3} />
+                    <img width={300} height={300} src={Member3} />
                     <div className="description">
                       <h1>Khaled MAHER</h1>
                       <h2>CEO</h2>

@@ -94,7 +94,7 @@ const Footer = () => {
 
           <Col lg="12">
             <p className="footer__copyright">
-              Copyright {year} desarrollado por Adrián Camilo Torres Gómez. Todos los derechos reservados.
+              Copyright {year} desarrollado por A&TSoftware. Todos los derechos reservados.
             </p>
           </Col>
         </Row>
