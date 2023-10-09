@@ -9,6 +9,8 @@ import {cartActions} from '../redux/slices/cartSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
+
+
 const Cart = () => {
 
   const cartItems = useSelector((state)=>state.cart.cartItems);
